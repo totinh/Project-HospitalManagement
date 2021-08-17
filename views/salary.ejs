@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="/img/logobv.png" />
+    <title>Bệnh Viện Đại học Y học Phạm Ngọc Thạch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="header-left">
+                <a href="/home" class="logo">
+                    <img src="/img/logobv.png" width="45" height="45" alt=""> <span>PNT</span>
+                </a>
+            </div>
+            <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span>Tài khoản</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/home/profile">Thông tin tài khoản</a>
+                        <a class="dropdown-item" href="/logout">Đăng xuất</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title"></li>
+                        <li class="">
+                            <a href="/home"><i class="fa fa-home"></i><span>Trang chủ</span></a>
+                        </li>
+                        <li>
+                            <a href="/doctors"><i class="fa fa-user-md"></i> <span>Bác sĩ</span></a>
+                        </li>
+                        <li>
+                            <a href="/patients"><i class="fa fa-wheelchair"></i> <span>Hồ sơ bệnh nhân</span></a>
+                        </li>
+                        <li>
+                            <a href="/history"><i class="fa fa-bed"></i><span>Lịch sử khám bệnh</span></a>
+                        </li>
+                        <li>
+                            <a href="/appointment"><i class="fa fa-calendar"></i> <span>Lịch khám bệnh</span></a>
+                        </li>
+                        <li>
+                            <a href="/home/departments"><i class="fa fa-hospital"></i> <span>Chuyên khoa</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><i class="fa fa-user"></i> <span> Nhân viên </span> <i class="fa fa-caret-down"></i></a>
+                            <ul style="display: none;">
+                                <li><a href="/employee"><i class="fa fa-address-card"></i> <span>Danh sách nhân viên</span></a></li>
+                                <li><a href="/employee/leave"><i class="fa fa-calendar"></i><span> Lịch nghĩ</span></a></li>
+                                <li><a href="/receipt"><i class="fa fa-book"></i> <span>Lương</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/store"><i class="fa fa-cube"></i> <span>Quầy thuốc</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-sm-4 col-3">
+                        <h4 class="page-title">Bảng lương</h4>
+                    </div>
+                    <div class="col-sm-8 col-9 text-right m-b-20">
+                        <a href="/employee/add" class="btn btn-primary float-right btn-rounded"><i class="fa fa-plus"></i>Thêm bảng lương</a>
+                    </div>
+                </div>
+                <form action="" method="POST">
+                    <div class="row filter-row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="form-group form-focus">
+                                <label class="focus-label">Tên nhân viên </label>
+                                <input type="text" class="form-control floating" name="search">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <button formaction="/employee/search" class="btn btn-success btn-block">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width:100px;">ID</th>
+                                        <th>Tên nhân viên</th>
+                                        <th>Email</th>
+                                        <th>Liên hệ</th>
+                                        <th style="min-width: 110px;">Ngày vào làm</th>
+                                        <th>Chức vụ</th>
+                                        <th>Lương</th>
+                                        <th>Bảng lương</th>
+                                        <th class="text-right">Tùy chọn</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var i = 0; i < employee.length; i++){ %>
+
+
+                                        <tr>
+                                            <td>
+                                                <%= employee[i].id %>
+                                            </td>
+                                            <td>
+                                                <%= employee[i].name %>
+                                            </td>
+                                            <td>
+                                                <%= employee[i].email %>
+                                            </td>
+                                            <td>
+                                                <%= employee[i].lienhe %>
+                                            </td>
+                                            <td>
+                                                <%= employee[i].join_date %>
+                                            </td>
+                                            <td>
+                                                <%= employee[i].chucvu %>
+                                            </td>
+
+                                            <td>
+                                                <%= employee[i].mucluong %> VND
+                                            </td>
+                                            <td><a class="btn btn-sm btn-primary" href="/receipt/generateslip/<%= employee[0].id%>">Tạo bảng lương</a></td>
+                                            <td class="text-right">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="/employee/edit_employee/<%= employee[0].id %>"><i class="fa fa-pencil m-r-5"></i>Sửa</a>
+                                                        <a class="dropdown-item" href="/employee/delete_employee/<%= employee[0].id %>" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i>Xóa</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <% } %>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.slimscroll.js"></script>
+    <script src="/js/Chart.bundle.js"></script>
+    <script src="/js/chart.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

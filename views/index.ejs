@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="./img/logobv.png" />
+    <title>PHÒNG KHÁM ĐA KHOA ĐẠI HỌC Y HỌC PHẠM NGỌC THẠCH </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="#">
+                <img src="./img/logobv.png" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+            <div class="collapse navbar-collapse main-menu-item justify-content-center" id="navbarResponsive">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#gioithieu">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown">KHÁM CHUYÊN KHOA</a>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="#dalieu">Da liễu</a>
+                            <a class="dropdown-item" href="#mat">Mắt</a>
+                            <a class="dropdown-item" href="#rang">Răng - Hàm - Mặt</a>
+                            <a class="dropdown-item" href="#tai">Tai -  Mũi - Họng</a>
+                            <a class="dropdown-item" href="#tuvantl">Tư vấn tâm lý</a>
+                            <a class="dropdown-item" href="#tuvandd">Tư vấn dinh dưỡng</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thongtin">LIÊN HỆ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ncov.moh.gov.vn/">THÔNG TIN CORONA</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3000/signup">ĐĂNG KÝ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3000/login">ĐĂNG NHẬP</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/03.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">PHÒNG KHÁM ĐA KHOA ĐẠI HỌC Y HỌC PHẠM NGỌC THẠCH</h1>
+                    <h3>Thân Thiện - Tận Tâm - Nhiệt Tình</h3>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#datlichkham">Đặt lịch khám bệnh</a></button>
+                    <!-- <button type="button" class="btn btn-primary btn-lg"><a href="lpkdk.html">Lịch phòng khám Đa Khoa</a></button> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/01.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">PHÒNG KHÁM ĐA KHOA ĐẠI HỌC Y HỌC PHẠM NGỌC THẠCH</h1>
+                    <h3>Thân Thiện - Tận Tâm - Nhiệt Tình</h3>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#datlichkham">Đặt lịch khám bệnh</a></button>
+                    <!-- <button type="button" class="btn btn-primary btn-lg"><a href="lpkdk.html">Lịch phòng khám Đa Khoa</a></button> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/02.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">PHÒNG KHÁM ĐA KHOA ĐẠI HỌC Y HỌC PHẠM NGỌC THẠCH</h1>
+                    <h3>Thân Thiện - Tận Tâm - Nhiệt Tình</h3>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#datlichkham">Đặt lịch khám bệnh</a></button>
+                    <!-- <button type="button" class="btn btn-primary btn-lg"><a href="lpkdk.html">Lịch phòng khám Đa Khoa</a></button> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/04.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">PHÒNG KHÁM ĐA KHOA ĐẠI HỌC Y HỌC PHẠM NGỌC THẠCH</h1>
+                    <h3>Phát triển - Nhân văn - Thiện nguyện</h3>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#datlichkham">Đặt lịch khám bệnh</a></button>
+                    <!-- <button type="button" class="btn btn-primary btn-lg"><a href="lpkdk.html">Lịch phòng khám Đa Khoa</a></button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid padding">
+        <div class="row padding" id="gioithieu">
+            <div class="col-12 text-center">
+                <h4 align="left"><b>GIỚI THIỆU PHÒNG KHÁM</b></h4>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <h5><b>GIỚI THIỆU PHÒNG KHÁM ĐA KHOA TRƯỜNG ĐẠI HỌC Y KHOA PHẠM NGỌC THẠCH</b></h5>
+                <p><b>Phòng khám Đa Khoa trực thuộc Trường Đại học Y Khoa Phạm Ngọc Thạch</b> được thành lập theo quy định số 05943/SYT-GPHĐ chịu trách nhiệm chuyên môn về việc khám-chữa bệnh, phòng bệnh, chăm sóc và tư vấn sức khỏe cho người dân. Phòng
+                    khám do PGS.TS.BS Nguyễn Thanh Hiệp - Phó Hiệu Trưởng - Trường phòng khám Đa Khoa Đại học Y Khoa Phạm Ngọc Thạch trực tiếp phụ trách, được xây dựng và thành lập bởi ban lãnh đạo có tầm nhìn và được đảm nhận bởi ban lãnh đạo có tầm
+                    nhìn và được đảm nhận bởi các chuyên gia đầu ngành, các giáo sư, bác sĩ giàu kinh nghiệm, đa số được đào tạo ở nước ngoài, thường xuyên cập nhật kiến thức, phương pháp chăm sóc sức khỏe và kỹ thuật y khoa tiên tiến, hiện đại, với phương
+                    châm "lấy người bệnh làm trung tâm của hoạt động chăm sóc, dự phòng và điều trị". </p>
+                <p>Phòng khám tọa lạc tại số 461 Sư Vạn Hạnh, Phường 12, Quận 10, Tp.HCM có đầy đủ các chuyên khoa như nội tổng quát, nội tim mạch, nội thần kinh, ngoại tổng quát, sản phụ khoa, nhi khoa, tai mũi họng, da liễu, mắt, khúc xạ (hợp tác với Đại
+                    học Michigan Hoa Kỳ), tư vấn tâm lý Y Khoa (hợp tác với Trường Tâm Lý Thực hành Paris Pháp), Phòng trị liệu và can thiệp sớm về lĩnh vực âm ngữ cho trẻ em và người lớn, (hợp tác với Tổ chức Trinh Foundation, Scope Newcastle của Úc),
+                    Cơ xương khớp - y học thể dục thể thao, tư vấn dinh dưỡng, Y học cổ truyền và Răng hàm mặt </p>
+                <p>Để hỗ trợ cho các chuyên khoa nói trên, Phòng khám có các đơn vị thực hiện cận lâm sàng: xét nghiệm, đo chức năng hô hấp, nội soi và chuẩn đoán hình ảnh với máy móc hiện đại tiên tiến nhất.</p>
+                <p>Ngoài ra, Phòng Khám còn có trung tâm đào tạo chuẩn đoán hình ảnh từ xa, có thể hội chẩn với các chuyên gia đầu ngành của Việt Nam và các chuyên gia quốc tế khi cần thiết.</p>
+                <p>Bên cạnh các chuyên khoa trên đây, tại phòng khám Đa Khoa trường Đại Học Y Khoa PNT đặc biệt có phòng khám Bác Sĩ gia đình:</p>
+                <p>Tại phòng khám bác sĩ gia đình, bệnh nhân sẽ cảm nhận được cách tiếp cận và phục vụ hoàn toàn khác biệt với đội ngũ bác sĩ gia đình thân thiện, ân cần, luôn lắng nghe, thấu hiểu, tạo mối quan hệ gần gũi, tin cậy giữa bác sĩ với bệnh nhân;
+                    từ đó bác sĩ gia đình giống như "bác sĩ riêng", có thể đưa ra kế hoạch phòng ngừa, theo dõi, phát hiện sớm và có phương thức điều trị cụ thể, hiệu quả nhất cho bệnh nhân theo nguyên lý "chăm sóc sức khỏe toàn diện".</p>
+                <p><b>Khách hàng khi đến với phòng khám Đa Khoa trường Đại học Y Khoa PNT sẽ được nhiều lợi ích như:</b></p>
+                <p>- Được chào đón trong 1 môi trường thoải mái và thân thiện, sắp đặt lịch khám và tư vấn theo yêu cầu, không phải chờ đợi quá lâu.</p>
+                <p>- Được lắng nghe và tư vấn các thắc mắc, các vấn đề sức khỏe của bạn.</p>
+                <p>- Được các bác sĩ theo dõi sức khỏe toàn diện và liên tục bằng hệ thống bệnh án điện tử</p>
+                <p>- Được bác sĩ chăm sóc cả khi đang bệnh và kể cả lúc hết bệnh.</p>
+                <p>- <b>Phòng Khám Đại học Y Khoa Phạm Ngọc Thạch 461 Sư Vạn Hạnh, Phường 12, Quận 10,TPHCM</b></p>
+                <p>- <b>Thời gian làm việc: </b>từ 7g30-12g và từ 13g-16g30 từ thứ 2 đến thứ 6 và từ 7g30 -11g30 thứ bảy</p>
+                <p><b>Email:</b> phongkham@pnt.edu.vn</p>
+                <p><b>Website:</b> https:phongkhamdaihocypnt.edu.vn</p>
+                <p><b>ĐT:</b> 028 3862 0120</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../img/gioithieu.jpg" class="img-fluid" width="100%">
+                <img src="../img/gioithieu1.jpg" class="img-fluid" width="100%">
+            </div>
+        </div>
+        <div class="row padding">
+            <div class="col-md-12 col-lg-7">
+                <p><b>Phòng khám Đa Khoa trực thuộc Trường Đại học Y Khoa Phạm Ngọc Thạch</b> được thành lập theo quy định số 05943/SYT-GPHĐ chịu trách nhiệm chuyên môn về việc khám-chữa bệnh, phòng bệnh, chăm sóc và tư vấn sức khỏe cho người dân. Phòng
+                    khám do PGS.TS.BS Nguyễn Thanh Hiệp - Phó Hiệu Trưởng - Trường phòng khám Đa Khoa Đại học Y Khoa Phạm Ngọc Thạch trực tiếp phụ trách, được xây dựng và thành lập bởi ban lãnh đạo có tầm nhìn và được đảm nhận bởi ban lãnh đạo có tầm
+                    nhìn và được đảm nhận bởi các chuyên gia đầu ngành, các giáo sư, bác sĩ giàu kinh nghiệm, đa số được đào tạo ở nước ngoài, thường xuyên cập nhật kiến thức, phương pháp chăm sóc sức khỏe và kỹ thuật y khoa tiên tiến, hiện đại, với phương
+                    châm "lấy người bệnh làm trung tâm của hoạt động chăm sóc, dự phòng và điều trị". </p>
+            </div>
+            <div class="main-content col-lg-5">
+                <form class="form" id="datlichkham" method="post" onsubmit="return ktDatlich()">
+                    <br>
+                    <h4 align="center"><b>ĐẶT LỊCH KHÁM BỆNH</b></h4>
+                    <br>
+                    <div class="table-responsive">
+                        <table style="width:100%" id="employees" class="table table-borderless">
+                            <tr>
+                                <td><input name="tenbenhnhan" class="form-control" placeholder="Họ và tên" required></td>
+                            </tr>
+                            <tr>
+                                <td><input name="phone" type="text" class="form-control" placeholder="Số điện thoại" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="tenbacsi" class="form-control" id="Select" required>
+                                        <option value="Chưa chọn bác sĩ!" selected>Bác sĩ</option>
+                                        <option value="PGS.TS.BS.Nguyễn Thanh Hiệp">PGS.TS.BS.Nguyễn Thanh Hiệp</option>
+                                        <option value="PGS.TS.BS.Trần Thị Mộng Hiệp">PGS.TS.BS.TRần Thị Mộng Hiệp</option>
+                                        <option value="TS.BS.Trần Đức Sĩ">TS.BS.Trần Đức Sĩ</option>
+                                        <option value="TS.BS.Nguyễn Nam Hà">TS.BS.Nguyễn Nam Hà</option>
+                                        <option value="TS.BS.Võ Thành Liêm">TS.BS.Võ Thành Liêm </option>
+                                        <option value="TS.BS.Châu Văn Trở">TS.BS.Châu Văn Trở</option> 
+                                        <option value="BSCKI. Phan Vương Huy Đồng">BSCKI.Phan Vương Huy Đổng</option>
+                                        <option value="TS.BSCKII.Nguyễn Tiến Linh">TS.BSCKII.Nguyễn Tiến Linh</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="time" type="time" class="form-control" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="date" type="date" class="form-control" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea name="yeucaukham" class="form-control" id="Textarea" rows="4" placeholder="Bạn cần khám " required></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <button class="btn btn-primary submit-btn">Thực hiện</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid padding">
+            <h3 align="center"><b>KHÁM CHUYÊN KHOA</b></h3>
+            <div class="row padding">
+                <div class="col-md-4" id="dalieu">
+                    <div class="card">
+                        <img src="../img/dalieu.jpg" class="img-fluid" width="100%">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>Da liễu</b></h4>
+                            <p class="card-text">Bệnh da liễu (hợp xưng của "bệnh da" và "bệnh hoa liễu"), gọi tắt là da liễu là các chứng bệnh ảnh hưởng đến bề mặt của cơ thể: da, lông, tóc, móng, các cơ và tuyến liên quan. "Hoa liễu" (chữ Hán: 花柳) nghĩa gốc là "hoa và liễu",
+                                nghĩa bóng là chỉ kỹ viện và kỹ nữ. Bệnh hoa liễu là cách gọi khác của bệnh lây truyền qua đường tình dục, ý muốn nói đây là bệnh của gái bán dâm. Da liễu thực ra là tên gọi thừa và không chính xác, gọi là bệnh da hoặc
+                                bệnh bì phu (bì phu có nghĩa là da) thì chính xác hơn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" class="mat">
+                    <div class="card">
+                        <img src="../img/mat.jpg" class="img-fluid" width="100%">
+                        <h4 class="card-title"><b>Mắt</b></h4>
+                        <p>Mắt là cơ quan của hệ thống thị giác. Cơ quan này cung cấp cho sinh vật sống tầm nhìn, khả năng tiếp nhận và xử lý chi tiết hình ảnh, cũng như cho phép một số chức năng phản ứng ảnh độc lập với tầm nhìn. Mắt phát hiện ánh sáng
+                            và chuyển đổi nó thành các xung điện hóa học trong tế bào thần kinh. Ở các sinh vật bậc cao, mắt là một hệ thống quang học phức tạp, thu thập ánh sáng từ môi trường xung quanh, điều chỉnh cường độ của nó thông qua một màng
+                            chắn, tập trung nó thông qua một cụm thấu kính có thể điều chỉnh để tạo thành một hình ảnh, chuyển đổi hình ảnh này thành một tập hợp các tín hiệu điện và truyền các tín hiệu này đến não thông qua các con đường thần kinh phức
+                            tạp kết nối mắt thông qua dây thần kinh thị giác với vỏ thị giác và các khu vực khác của não. Đôi mắt với sức mạnh phân giải đã có mười dạng cơ bản khác nhau và 96% các loài động vật sở hữu một hệ thống quang học phức tạp.
+                            Mắt xử lý hình ảnh có trong động vật thân mềm, hợp âm và động vật chân đốt.</p>
+                    </div>
+                    <hr class="my-5">
+                </div>
+                <div class="col-md-4" id="rang">
+                    <div class="card">
+                        <img src="../img/rang.jpg" class="img-fluid" width="100%">
+                        <h4 class="card-title"><b>Răng - Hàm - Mặt</b></h4>
+                        <p>Với đội ngũ y, bác sĩ nhiều năm kinh nghiệm, tận tụy trong công tác chăm sóc sức khỏe răng miệng cho bệnh nhân, khoa Răng Hàm Mặt đã khai thác triệt để và hiệu quả các máy móc được trang bị trong gói thầu ODA, với phòng chì đạt
+                            chuẩn an toàn bức xạ của sở Khoa học công nghệ được đặt ngay bên trong phòng khám cùng với 2 máy X-Quang quang kĩ thuật số( máy chụp toàn cảnh Panaroma và máy chụp phim quanh chóp) cho hiệu quả chẩn đoán ban đầu chính xác nhằm
+                            phục vụ công tác điều trị tốt nhất cho bệnh nhân. Hiện, phòng khám Răng Hàm Mặt được trang bị 6 ghế máy nha khoa với số lượng dụng cụ đủ để khám và điều trị răng miệng 40-50 lượt bệnh mỗi ngày, hạn chế thời gian chờ đợi gây
+                            phiền hà cho người bệnh.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" id="tai">
+                    <div class="card">
+                        <img src="../img/tai.jpg" class="img-fluid" width="100%">
+                        <h4 class="card-title"><b>Tai - Mũi -Họng</b></h4>
+                        <p>Tai mũi họng là nhóm bệnh lý thường gặp ở mọi lứa tuổi, đặc biệt là ở trẻ em. Thay đổi thời tiết, khí hậu, vệ sinh môi trường, khói bụi...là những yếu tố chính dẫn gây bệnh. Các bệnh lý về tai mũi họng thường hay gặp như: Viêm
+                            tai giữa, viêm họng, viêm xoang, viêm amidan, viêm mũi dị ứng.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" id="tuvantl">
+                    <div class="card">
+                        <img src="../img/tuvantl.jpg" class="img-fluid" width="100%">
+                        <h4 class="card-title"><b>Tư vấn tâm lý</b></h4>
+                        <p>Tư vấn là một tiến trình tương tác giữa chuyên gia tư vấn và khách hàng, trong đó chuyên gia tư vấn là người giúp khách hàng nhìn rõ vấn đề, khám phá ra tiềm năng của bản thân và đi đến tự giải quyết vấn đề của mình.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" id="tuvandd">
+                    <div class="card">
+                        <img src="../img/tuvandd.jpg" class="img-fluid" width="100%">
+                        <h4 class="card-title"><b>Tư vấn dinh dưỡng</b></h4>
+                        <p>Một chế độ ăn đa dạng thực phẩm, đầy đủ và cân bằng các yếu tố đa lượng và vi lượng đóng vai trò vô cùng quan trọng đối với chức năng hệ miễn dịch, có thể giúp giảm nguy cơ mắc cũng như rút ngắn thời gian điều trị bệnh.Sau đây
+                            là một số nguyên tắc dinh dưỡng giúp duy trì hệ miễn dịch khỏe mạnh, từ đó phòng chống bệnh COVID-19 ở trẻ em :</p>
+                        <p><b>Một chế độ ăn đủ đạm (protein)</b> có vai trò rất quan trọng giúp cơ thể duy trì hệ miễn dịch khỏe mạnh và giúp nhanh lành bệnh. Chất đạm cung cấp nguyên liệu tổng hợp các tế bào bạch cầu và kháng thể được ví như những binh
+                            lính trong cuộc chiến chống lại vi khuẩn và virus xâm nhập cơ thể. Đạm (protein) có nhiều trong các loại thực phẩm sau: Thịt, cá, trứng, sữa, và các loại đậu/đỗ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center padding">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" id="thongtin">
+                        <br>
+                        <h6><b>Liên Hệ</b></h6>
+                        <p align="left"><b> Địa chỉ: </b> <i>461 Sư Vạn Thạnh, Phường 12, Quận 10, TP.HCM</i></p>
+                        <p align="left"><b>Website: </b><i>https://phongkhamdaihocypnt.edu.vn</i></p>
+                        <p align="left"><b>Mail: </b><i>phongkham@pnt.edu.vn</i></p>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <hr class="my-1">
+                    <div class="col-12 social padding">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
